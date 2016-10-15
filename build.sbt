@@ -7,4 +7,6 @@ scalacOptions ++= Seq(
 
 scalaVersion := "2.11.8"
 
-libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.1" % "test"
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+)
