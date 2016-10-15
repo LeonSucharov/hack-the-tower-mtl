@@ -15,3 +15,12 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+.idea/libraries/SBT__org_typelevel_scala_library_2_11_8_jar.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/hack-the-tower-mtl-build.iml
+.idea/modules/hack-the-tower-mtl.iml
+.idea/sbt.xml
+.idea/scala_compiler.xml
+.idea/vcs.xml
+.idea/workspace.xml
