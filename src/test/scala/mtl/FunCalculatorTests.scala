@@ -41,6 +41,16 @@ class FunCalculatorTests extends FunSpec with Matchers {
     val r = c.press(3).plus().press(2).clear().screen
     r shouldBe "0"
   }
+  it("123+21=144") {
+    val c: Calculator = new CalculatorDelegate
+    val r = c.press(1).press(2).press(3).plus().press(2).press(1).equals().screen
+    r shouldBe "144"
+  }
+  it("123+21-11=133") {
+    val c: Calculator = new CalculatorDelegate
+    val r = c.press(1).press(2).press(3).plus().press(2).press(1).minus().press(1).press(1).equals().screen
+    r shouldBe "133"
+  }
 
   it("displays ERROR on typing a non-symbolic character")(pending)
   it("displays ERROR on typing two operators twice")(pending)
